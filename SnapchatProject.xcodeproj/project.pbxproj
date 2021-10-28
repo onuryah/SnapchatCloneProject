@@ -10,6 +10,7 @@
 		4A1865562729A5CB0093D390 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1865552729A5CB0093D390 /* UserSingleton.swift */; };
 		4A27DA6A2729762F006737B4 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A27DA692729762F006737B4 /* SnapVC.swift */; };
 		4A2D13242729661700FAE468 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D13232729661700FAE468 /* GoogleService-Info.plist */; };
+		4A664379272AD479001B2092 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A664378272AD479001B2092 /* Snap.swift */; };
 		4ADCAF2227296CE1004805B9 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCAF2127296CE1004805B9 /* UploadVC.swift */; };
 		4ADCAF2427296CEE004805B9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCAF2327296CEE004805B9 /* FeedVC.swift */; };
 		4ADCAF2627296D27004805B9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCAF2527296D27004805B9 /* SettingsVC.swift */; };
@@ -19,6 +20,7 @@
 		4AEAC78D27289FC800BA1EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEAC78B27289FC800BA1EF2 /* Main.storyboard */; };
 		4AEAC78F27289FCA00BA1EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEAC78E27289FCA00BA1EF2 /* Assets.xcassets */; };
 		4AEAC79227289FCA00BA1EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEAC79027289FCA00BA1EF2 /* LaunchScreen.storyboard */; };
+		4AFE27AE272AB5EF009AA7F5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE27AD272AB5EF009AA7F5 /* FeedCell.swift */; };
 		8DD86E2CD6AE01528B0CBED8 /* Pods_SnapchatProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251DEDC1F74EA25B714FEAAE /* Pods_SnapchatProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,7 @@
 		4A1865552729A5CB0093D390 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		4A27DA692729762F006737B4 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		4A2D13232729661700FAE468 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A664378272AD479001B2092 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		4ADCAF2127296CE1004805B9 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		4ADCAF2327296CEE004805B9 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		4ADCAF2527296D27004805B9 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		4AEAC78E27289FCA00BA1EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AEAC79127289FCA00BA1EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AEAC79327289FCA00BA1EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AFE27AD272AB5EF009AA7F5 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4A1865552729A5CB0093D390 /* UserSingleton.swift */,
+				4A664378272AD479001B2092 /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 				4ADCAF2127296CE1004805B9 /* UploadVC.swift */,
 				4ADCAF2527296D27004805B9 /* SettingsVC.swift */,
 				4A27DA692729762F006737B4 /* SnapVC.swift */,
+				4AFE27AD272AB5EF009AA7F5 /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1865562729A5CB0093D390 /* UserSingleton.swift in Sources */,
+				4A664379272AD479001B2092 /* Snap.swift in Sources */,
 				4AEAC78A27289FC800BA1EF2 /* SignInVC.swift in Sources */,
 				4AEAC78627289FC800BA1EF2 /* AppDelegate.swift in Sources */,
 				4ADCAF2427296CEE004805B9 /* FeedVC.swift in Sources */,
@@ -257,6 +264,7 @@
 				4A27DA6A2729762F006737B4 /* SnapVC.swift in Sources */,
 				4ADCAF2227296CE1004805B9 /* UploadVC.swift in Sources */,
 				4ADCAF2627296D27004805B9 /* SettingsVC.swift in Sources */,
+				4AFE27AE272AB5EF009AA7F5 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +422,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,6 +452,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

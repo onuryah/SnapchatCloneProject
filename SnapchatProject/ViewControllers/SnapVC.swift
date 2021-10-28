@@ -6,25 +6,32 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class SnapVC: UIViewController {
     @IBOutlet weak var timeLeftLabel: UILabel!
     
+    var selectedSnap : Snap?
+    var selectedTime : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let time = selectedTime {
+        timeLeftLabel.text = "Time Left : \(time)"
+        }
+        
+        if let snap = selectedSnap {
+            for imageUrl in snap.imageUrlArray {
+                
+            }
+            
+            let imageSlideShow = ImageSlideshow(frame: CGRect(x: 10, y: 12, width: self.view.frame.width * 0.95, height: self.view.frame.height * 0.95))
+            imageSlideShow.backgroundColor = UIColor.white
+            imageSlideShow.contentScaleMode = UIViewContentMode.scaleAspectFit
+            
+            self.view.addSubview(imageSlideShow)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

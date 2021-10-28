@@ -9,6 +9,9 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'Kingfisher', '~> 7.0'
+pod 'SDWebImage'
+pod 'ImageSlideshow', '~> 1.9.0'
 
   # Pods for SnapchatProject
 
