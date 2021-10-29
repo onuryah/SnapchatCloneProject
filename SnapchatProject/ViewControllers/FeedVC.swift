@@ -16,9 +16,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let fireStoreDatabase = Firestore.firestore()
     
-    var chosenSnap : Snap?
-    var timeLeft : Int?
-    
+    var chosenSnap : Snap?    
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserInfo()
@@ -54,12 +52,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                                             }
                                         }else {
 //                                            Time Left -> SnapVC
-                                            
-                                            self.timeLeft = 24 - difference
+                                                                                        
+                                            let snap = Snap(username: username, imageUrlArray: imageUrlArray, date: date.dateValue(),timeDifference: 24 - difference)
+                                            self.snapArray.append(snap)
                                         }
                                     }
-                                    let snap = Snap(username: username, imageUrlArray: imageUrlArray, date: date.dateValue())
-                                    self.snapArray.append(snap)
                                 }
                             }
                         }
@@ -109,9 +106,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSnapVC" {
             let destinationVC = segue.destination as! SnapVC
-            destinationVC.selectedSnap = chosenSnap
-            destinationVC.selectedTime = self.timeLeft
-        }
+            destinationVC.selectedSnap = chosenSnap        }
     }
     
     

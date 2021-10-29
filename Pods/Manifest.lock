@@ -484,6 +484,9 @@ PODS:
   - ImageSlideshow (1.9.2):
     - ImageSlideshow/Core (= 1.9.2)
   - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
   - Kingfisher (7.1.1)
   - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
@@ -502,7 +505,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - ImageSlideshow (~> 1.9.0)
-  - Kingfisher (~> 7.0)
+  - ImageSlideshow/Kingfisher
   - SDWebImage
 
 SPEC REPOS:
@@ -554,6 +557,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
-PODFILE CHECKSUM: 62244b561f3d225eff9fdebe30cf59807505f125
+PODFILE CHECKSUM: bcddd9be0c5cfa663584676bd0653fc12c8b4b21
 
 COCOAPODS: 1.11.2
